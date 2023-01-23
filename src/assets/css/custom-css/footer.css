@@ -1,0 +1,15 @@
+.footer ul .nav-item .nav-link {
+  color: var(--white);
+  padding: 0;
+}
+.footer ul .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-col ul li:hover a {
+  color: var(--brand-color) !important;
+}
+
+.footer .app-download-btn {
+  border: 1px solid var(--text-color-dark);
+}

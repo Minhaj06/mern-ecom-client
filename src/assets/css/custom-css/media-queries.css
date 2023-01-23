@@ -1,0 +1,175 @@
+@media (min-width: 576px) {
+  #searchModal .modal-dialog {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #searchModal .modal-dialog .modal-content {
+    border: none;
+  }
+}
+
+/* @media (max-width: 1199.98px) {
+  .account-table {
+    font-size: 1.4rem !important;
+  }
+} */
+
+@media (max-width: 991.98px) {
+  header.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1030;
+    background-color: var(--white);
+  }
+
+  #main {
+    padding-top: 3rem;
+  }
+
+  .home-banner-grid {
+    grid-template-areas:
+      "grid-img-md grid-img-md grid-img-md grid-img-md"
+      "grid-img-sm-1 grid-img-sm-1 grid-img-sm-2 grid-img-sm-2"
+      "grid-img-lg grid-img-lg grid-img-lg grid-img-lg";
+  }
+
+  .product-list-menu li {
+    margin: 0.5rem;
+  }
+
+  .footer {
+    margin-bottom: 6rem;
+  }
+
+  /* 
+  .home-banner .carousel-inner h1 {
+    font-size: 3rem;
+  }
+
+  .offer-banner .carousel-inner h1 {
+    font-size: 3rem !important;
+  }
+
+  .product-details-tabs .nav-pills .nav-link {
+    padding: 1rem 2rem;
+  }
+
+  .top-categories {
+    padding-top: 11rem !important;
+    margin-bottom: -9rem;
+  }
+
+  .per-page-filter-area {
+    font-size: 1.5rem !important;
+  } */
+}
+
+@media (max-width: 767.98px) {
+  .product-card .product-img {
+    min-height: 25rem;
+    max-height: 25rem;
+  }
+
+  .product-card .product-img img {
+    max-height: 18rem;
+  }
+
+  .header .topbar-icon-group i {
+    font-size: 1.6rem;
+  }
+  .header .topbar-icon-group .icon-name {
+    font-size: 1.5rem;
+  }
+
+  .home-banner .carousel-inner h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .offer-banner .carousel-inner h1 {
+    font-size: 2rem !important;
+  }
+  .payment-methods h1 {
+    font-size: 3rem !important;
+  }
+  .clients-review h1 {
+    font-size: 3rem !important;
+  }
+  .add-to-cart-bottom-banner {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-banner-grid {
+    grid-template-areas:
+      "grid-img-md grid-img-md grid-img-md grid-img-md"
+      "grid-img-sm-1 grid-img-sm-1 grid-img-sm-1 grid-img-sm-1"
+      "grid-img-sm-2 grid-img-sm-2 grid-img-sm-2 grid-img-sm-2"
+      "grid-img-lg grid-img-lg grid-img-lg grid-img-lg";
+  }
+  .product-card .product-img {
+    min-height: 23rem;
+    max-height: 23rem;
+  }
+  .product-card img {
+    max-height: 15rem !important;
+  }
+  .card-item-single .card-item-info h3 {
+    font-size: 1.4rem !important;
+  }
+  .card-item-single .card-item-info h4,
+  .card-item-single .card-item-info .stars,
+  .card-item-single .card-item-info button {
+    font-size: 1.3rem !important;
+  }
+  .card-item-single .card-item-count {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .mobile-menu {
+    top: 5rem;
+  }
+
+  .sec-title {
+    font-size: 3rem;
+  }
+  .add-to-cart-bottom-banner {
+    padding: 2rem;
+  }
+  .subscribe-area .email-input {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 58%;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+  .product-card .product-icons li {
+    margin: 0 0.25rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+  .sidebar {
+    width: 87%;
+  }
+  .home-banner .carousel-inner h1 {
+    font-size: 1.8rem;
+  }
+  .popular-brands h1 {
+    font-size: 3.5rem !important;
+  }
+}
