@@ -1,16 +1,15 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/nav/header/Header";
-// import Sidebar from "./components/nav/Sidebar/Sidebar";
+import { Toaster } from "react-hot-toast";
+import Menu from "./components/nav/Menu";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      {/* <Sidebar /> */}
+      <Menu />
+      <Toaster position="bootom-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>

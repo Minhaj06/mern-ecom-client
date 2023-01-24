@@ -1,10 +1,14 @@
 import React from "react";
-// import Jumbotron from "../components/cards/Jumbotron";
+import Jumbotron from "../components/cards/Jumbotron";
+import { useAuth } from "../context/auth";
 
 function Home() {
+  const [auth, setAuth] = useAuth();
+
   return (
     <div>
-      <h1 className="py-5">Home Page</h1>
+      <Jumbotron title="Home" subtitle="Welcome to my first react ecommerce" />
+      <pre className="mt-4">{JSON.stringify(auth, null, 4)}</pre>
     </div>
   );
 }
