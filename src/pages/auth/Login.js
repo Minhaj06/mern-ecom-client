@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Jumbotron from "../../components/cards/Jumbotron";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -31,12 +31,7 @@ function Login() {
         setAuth({ ...auth, token: data.token, user: data.user });
         toast.success("Login successful");
 
-        setTimeout(
-          navigate(
-            location.state || `/dashboard/${data?.user?.rolw === 1 ? "admin" : "user"}`
-          ),
-          500
-        );
+        navigate(location.state || `/dashboard`);
       }
     } catch (err) {
       console.log(err);
@@ -55,7 +50,6 @@ function Login() {
               <input
                 type="email"
                 name=""
-                id=""
                 className="form-control mb-4 p-2"
                 placeholder="Enter your email"
                 value={email}
@@ -65,7 +59,6 @@ function Login() {
               <input
                 type="password"
                 name=""
-                id=""
                 className="form-control mb-4 p-2"
                 placeholder="Enter your password"
                 value={password}

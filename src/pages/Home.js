@@ -8,7 +8,9 @@ function Home() {
   return (
     <div>
       <Jumbotron title="Home" subtitle="Welcome to my first react ecommerce" />
-      <pre className="mt-4">{JSON.stringify(auth, null, 4)}</pre>
+      <div className="container-fluid">
+        <pre className="mt-4">{JSON.stringify(auth, null, 4)}</pre>
+      </div>
     </div>
   );
 }
